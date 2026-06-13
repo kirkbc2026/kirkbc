@@ -54,4 +54,153 @@
 
     .rule {
       height: 3px;
-      background:
+      background: linear-gradient(90deg, var(--orange) 0%, var(--teal) 100%);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 3rem 4rem;
+    }
+
+    .about p {
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .about p:last-child { margin-bottom: 0; }
+
+    .about .validation {
+      border-left: 3px solid var(--orange);
+      padding-left: 1.2rem;
+      color: #3a4a5a;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #d0cec8;
+    }
+
+    .services-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.8rem;
+    }
+
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      list-style: none;
+    }
+
+    .services-list li {
+      font-size: 1.1rem;
+      color: var(--navy);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      position: relative;
+    }
+
+    .services-list li + li::before {
+      content: '·';
+      position: absolute;
+      left: -0.8rem;
+      color: var(--teal);
+    }
+
+    .cta {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #d0cec8;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 0.75rem 1.8rem;
+      border-radius: 2px;
+      transition: background 0.15s ease;
+    }
+
+    .btn-contact:hover, .btn-contact:focus { background: #bf4f15; outline: none; }
+
+    .phone { font-size: 0.95rem; color: #4a5a6a; }
+    .phone a { color: var(--teal); text-decoration: none; }
+    .phone a:hover { text-decoration: underline; }
+
+    footer {
+      background: var(--navy);
+      padding: 1.4rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #506070;
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 1.8rem 1.2rem; }
+      main { padding: 2.8rem 1.2rem 4rem; }
+      .wordmark-name { font-size: 0.95rem; }
+      .about p { font-size: 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wordmark">
+      <span class="wordmark-name">Kirk Building Consultancy</span>
+      <span class="wordmark-strapline">Your advocate for safe, compliant buildings</span>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <main>
+    <section class="about">
+      <p>KBC is the client's advocate for safety-critical building work. We make sure your obligations are met — and that the people you've employed actually carry them out. Not just to tick a box. To produce the best building they can.</p>
+      <p>The word <em>dutyholder</em> appears on every page of every piece of building safety legislation written in the last decade. Somewhere along the way it became wallpaper. Some wear it as wrapping paper — dressed up in the language of responsibility, with nothing inside the box. KBC exists to make sure the duty in dutyholder actually means something.</p>
+      <p class="validation">In May 2026 the Building Control Independent Panel said the same thing.</p>
+    </section>
+
+    <section class="services">
+      <p class="services-label">What we do</p>
+      <ul class="services-list">
+        <li>Inspection</li>
+        <li>Remediation Assurance</li>
+        <li>Technical Advisory</li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <a class="btn-contact" href="mailto:neil@kirkbc.uk">Get in touch</a>
+      <p class="phone">Or call <a href="tel:+447305015287">07305 015287</a></p>
+    </section>
+  </main>
+
+  <div class="rule"></div>
+
+  <footer>
+    Kirk Building Consultancy &nbsp;·&nbsp; neil@kirkbc.uk &nbsp;·&nbsp; Independent. No product agenda.
+  </footer>
+
+</body>
+</html>

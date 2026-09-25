@@ -1,206 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kirk Building Consultancy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent building consultancy specialising in façade and drylining installation, inspections and defects. Expert witness enquiries welcomed.">
+  <meta name="theme-color" content="#10243d">
+  <title>Façade & Drylining Consultant | Kirk Building Consultancy</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:   #0D1F3C;
-      --teal:   #006E8C;
-      --orange: #D85C1A;
-      --offwhite: #F5F4F0;
-      --mid:    #8A9BAD;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--offwhite);
-      color: var(--navy);
-      font-family: Calibri, 'Gill Sans', 'Trebuchet MS', sans-serif;
-      font-size: 18px;
-      line-height: 1.65;
-      min-height: 100vh;
-    }
-
-    header {
-      background: var(--navy);
-      padding: 2.4rem 2rem 2.2rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .wordmark { display: flex; flex-direction: column; gap: 0.25rem; }
-
-    .wordmark-name {
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #fff;
-    }
-
-    .wordmark-strapline {
-      font-size: 1rem;
-      color: var(--teal);
-      letter-spacing: 0.04em;
-    }
-
-    .rule {
-      height: 3px;
-      background: linear-gradient(90deg, var(--orange) 0%, var(--teal) 100%);
-    }
-
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 3rem 3rem 4rem;
-    }
-
-    .about p {
-      margin-bottom: 1.5rem;
-      font-size: 1.2rem;
-    }
-
-    .about p:last-child { margin-bottom: 0; }
-
-    .about .validation {
-      border-left: 3px solid var(--orange);
-      padding-left: 1.2rem;
-      color: #3a4a5a;
-      font-style: italic;
-      font-size: 1.1rem;
-    }
-
-    .services {
-      margin-top: 2.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid #d0cec8;
-    }
-
-    .services-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--mid);
-      margin-bottom: 0.8rem;
-    }
-
-    .services-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.2rem;
-      list-style: none;
-    }
-
-    .services-list li {
-      font-size: 1.1rem;
-      color: var(--navy);
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      position: relative;
-    }
-
-    .services-list li + li::before {
-      content: '·';
-      position: absolute;
-      left: -0.8rem;
-      color: var(--teal);
-    }
-
-    .cta {
-      margin-top: 2.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid #d0cec8;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-
-    .btn-contact {
-      display: inline-block;
-      background: var(--orange);
-      color: #fff;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      padding: 0.75rem 1.8rem;
-      border-radius: 2px;
-      transition: background 0.15s ease;
-    }
-
-    .btn-contact:hover, .btn-contact:focus { background: #bf4f15; outline: none; }
-
-    .phone { font-size: 0.95rem; color: #4a5a6a; }
-    .phone a { color: var(--teal); text-decoration: none; }
-    .phone a:hover { text-decoration: underline; }
-
-    footer {
-      background: var(--navy);
-      padding: 1.4rem 2rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #506070;
-      letter-spacing: 0.03em;
-    }
-
-    @media (max-width: 480px) {
-      header { padding: 1.8rem 1.2rem; }
-      main { padding: 2.8rem 1.2rem 4rem; }
-      .wordmark-name { font-size: 0.95rem; }
-      .about p { font-size: 1rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    :root{--navy:#10243d;--ink:#18283b;--teal:#087f8c;--orange:#e16a32;--paper:#f5f3ee;--white:#fff;--muted:#667383;--line:#d8d8d1;--max:1160px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+    .topbar{background:var(--navy);color:var(--white);border-bottom:4px solid transparent;border-image:linear-gradient(90deg,var(--orange),var(--teal)) 1}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{text-decoration:none;font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .navlinks{display:flex;gap:28px;align-items:center;font-size:14px}
+    .navlinks a{text-decoration:none;color:#dce4ea}.navlinks a:hover{color:#fff}
+    .navlinks .nav-cta{padding:10px 16px;border:1px solid #718297;border-radius:3px;color:#fff}
+    .hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;inset:0 0 0 auto;width:42%;opacity:.2;background:repeating-linear-gradient(90deg,transparent 0 68px,#8ea4b5 69px 70px),repeating-linear-gradient(0deg,transparent 0 68px,#8ea4b5 69px 70px);mask-image:linear-gradient(90deg,transparent,#000)}
+    .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(230px,.7fr);gap:60px;align-items:center;padding-block:92px 100px}
+    .eyebrow{margin:0 0 18px;color:#78c6c8;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+    h1{max-width:790px;margin:0;font-size:clamp(42px,6vw,76px);line-height:1.03;letter-spacing:-.045em}
+    .hero-copy{max-width:690px;margin:25px 0 0;color:#d5dfe7;font-size:20px;line-height:1.55}
+    .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+    .button{display:inline-block;padding:13px 20px;border-radius:3px;background:var(--orange);color:#fff;text-decoration:none;font-weight:700}
+    .button:hover{background:#c9501c}.button-secondary{background:transparent;border:1px solid #8395a7}.button-secondary:hover{background:#203651}
+    .hero-note{border-left:2px solid var(--orange);padding:8px 0 8px 22px;color:#d5dfe7;font-size:15px}
+    .hero-note strong{display:block;margin-bottom:9px;color:#fff;font-size:18px}
+    .section{padding-block:82px}.section-heading{max-width:730px;margin-bottom:38px}
+    .kicker{margin:0 0 10px;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h2{margin:0;color:var(--navy);font-size:clamp(30px,4vw,44px);line-height:1.14;letter-spacing:-.025em}
+    .lead{margin:18px 0 0;color:#455365;font-size:19px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:25px 24px 28px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--teal)}
+    .card-number{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.12em}
+    h3{margin:12px 0 10px;color:var(--navy);font-size:21px;line-height:1.25}
+    .card p{margin:0;color:#4d5b6a;font-size:16px}
+    .expert{background:#e9ece9;border-block:1px solid var(--line)}
+    .expert-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+    .expert-aside{padding:26px;background:var(--navy);color:#fff}
+    .expert-aside p{margin:0;color:#dbe3e9;font-size:16px}
+    .expert-aside strong{display:block;margin-bottom:10px;color:#fff;font-size:18px}
+    .expert-copy p{margin:18px 0 0;color:#455365}
+    .expert-copy ul{margin:20px 0 0;padding-left:21px;color:#455365}
+    .expert-copy li{margin:7px 0}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:start}
+    .about-copy p{margin:18px 0 0;color:#455365}
+    .credential{border-left:3px solid var(--orange);padding:4px 0 4px 20px;color:var(--navy);font-weight:700;font-size:19px}
+    .contact{background:var(--navy);color:#fff}
+    .contact h2{color:#fff}.contact .lead{color:#d5dfe7}
+    .contact-row{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:30px;padding-top:26px;border-top:1px solid #40536a}
+    .contact-details{color:#d5dfe7}.contact-details a{color:#8dd4d5;text-decoration:none}.contact-details a:hover{text-decoration:underline}
+    footer{padding:24px 0;background:#0b1b2e;color:#b5c1cc;font-size:13px}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-row p{margin:0}
+    footer a{color:#b5c1cc}
+    @media(max-width:800px){.hero-inner{grid-template-columns:1fr;gap:34px;padding-block:68px}.hero-note{max-width:540px}.expert-grid,.about-grid{grid-template-columns:1fr;gap:32px}.services{grid-template-columns:1fr}.section{padding-block:62px}}
+    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 34px))}.nav{padding-block:18px;align-items:flex-start;flex-direction:column}.navlinks{gap:15px;flex-wrap:wrap}.navlinks .nav-cta{padding:7px 10px}.hero-copy{font-size:18px}.contact-row{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="wordmark">
-      <span class="wordmark-name">Kirk Building Consultancy</span>
-      <span class="wordmark-strapline">Your advocate for safe, compliant buildings</span>
-    </div>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Kirk Building Consultancy</a>
+      <div class="navlinks"><a href="#services">Services</a><a href="#expert-witness">Expert witness</a><a href="#about">About</a><a class="nav-cta" href="#contact">Contact</a></div>
+    </nav>
   </header>
-
-  <div class="rule"></div>
-
-  <main>
-    <section class="about">
-      <p>KBC is the client's advocate for safety-critical building work. We make sure your obligations are met — and that the people you've employed actually carry them out. Not just to tick a box. To produce the best building they can.</p>
-      <p>The word <em>dutyholder</em> appears on every page of every piece of building safety legislation written in the last decade. Somewhere along the way it became wallpaper. Some wear it as wrapping paper — dressed up in the language of responsibility, with nothing inside the box. KBC exists to make sure the duty in dutyholder actually means something.</p>
-      <p class="validation">In May 2026 the Building Control Independent Panel said the same thing.</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner wrap">
+        <div>
+          <p class="eyebrow">Independent construction consultancy</p>
+          <h1>Façade and drylining expertise, grounded in site experience.</h1>
+          <p class="hero-copy">Practical technical advice on installation, workmanship and defects—supported by more than 35 years in construction.</p>
+          <div class="actions"><a class="button" href="#contact">Discuss an instruction</a><a class="button button-secondary" href="#services">Explore services</a></div>
+        </div>
+        <aside class="hero-note"><strong>Clear, independent advice</strong>Inspection and technical consultancy for façade and drylining works, with expert witness enquiries considered where the matter fits my experience.</aside>
+      </div>
     </section>
-
-    <section class="services">
-      <p class="services-label">What we do</p>
-      <ul class="services-list">
-        <li>Inspection</li>
-        <li>Remediation Assurance</li>
-        <li>Technical Advisory</li>
-      </ul>
+    <section class="section wrap" id="services">
+      <div class="section-heading"><p class="kicker">How I can help</p><h2>Construction detail matters.</h2><p class="lead">Focused support to understand what was specified, what was installed and what may have gone wrong.</p></div>
+      <div class="services">
+        <article class="card"><span class="card-number">01 / INSPECTION</span><h3>Façade and drylining inspection</h3><p>Site-based review of visible installation, workmanship and reported concerns, with findings recorded clearly.</p></article>
+        <article class="card"><span class="card-number">02 / DEFECTS</span><h3>Defect investigation</h3><p>Assessment of façade and internal drylining failures, including relevant records, details and site evidence.</p></article>
+        <article class="card"><span class="card-number">03 / ADVICE</span><h3>Technical consultancy</h3><p>Independent advice on installation quality, remedial proposals and practical next steps for building owners and project teams.</p></article>
+      </div>
     </section>
-
-    <section class="cta">
-      <a class="btn-contact" href="mailto:neil@kirkbc.uk">Get in touch</a>
-      <p class="phone">Or call <a href="tel:+447305015287">07305 015287</a></p>
+    <section class="section expert" id="expert-witness">
+      <div class="expert-grid wrap">
+        <div><p class="kicker">Expert witness</p><h2>Considering instructions in my areas of experience.</h2></div>
+        <div class="expert-copy"><p>I am developing an expert witness practice focused on façade and drylining installation and failures. I will consider each enquiry individually and only accept work where the issues fall within my knowledge and experience and I can act independently.</p><ul><li>Façade, external wall and drylining installation</li><li>Workmanship and alleged defects or failures</li><li>Inspection, records and technical issues relevant to the dispute</li></ul><p>Please contact me to discuss the issues, proposed scope, timetable and any relevant experience before appointment. Availability and suitability are assessed case by case.</p></div>
+      </div>
+    </section>
+    <section class="section wrap" id="about">
+      <div class="about-grid">
+        <div class="about-copy"><p class="kicker">About Neil Kirk</p><h2>Practical knowledge built over a working career in construction.</h2><p>I am a construction professional with more than 35 years of industry experience, including site supervision, project management and senior contracting roles. My work has involved façade and drylining packages and the standards required to deliver them properly.</p><p>I bring a site-focused perspective to inspections and technical reviews, and explain findings in straightforward language.</p></div>
+        <div class="credential">Neil Kirk MCIOB<br><span style="font-weight:400;color:#536174;font-size:16px">Kirk Building Consultancy</span></div>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="wrap"><p class="kicker">Start a conversation</p><h2>Have a project or instruction to discuss?</h2><p class="lead">Send a short outline of the building, the façade or drylining issues, and the help you are looking for.</p><div class="contact-row"><div class="contact-details">Email <a href="mailto:neil@kirkbc.uk">neil@kirkbc.uk</a><br>Telephone <a href="tel:+447305015287">07305 015287</a></div><a class="button" href="mailto:neil@kirkbc.uk?subject=Building%20consultancy%20enquiry">Email Neil</a></div></div>
     </section>
   </main>
-
-  <div class="rule"></div>
-
-  <footer>
-    Kirk Building Consultancy &nbsp;·&nbsp; neil@kirkbc.uk &nbsp;·&nbsp; Independent. No product agenda.
-  </footer>
-
+  <footer><div class="footer-row wrap"><p>Kirk Building Consultancy</p><p>Trading name of KIRK BUILDING &amp; CONSTRUCTION LTD · Company no. 13716478</p><p><a href="privacy.html">Privacy Notice</a></p><p><a href="mailto:neil@kirkbc.uk">neil@kirkbc.uk</a> · <a href="tel:+447305015287">07305 015287</a></p></div></footer>
 </body>
 </html>
